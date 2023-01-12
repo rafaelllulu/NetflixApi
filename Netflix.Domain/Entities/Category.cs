@@ -1,13 +1,16 @@
+using Netflix.Domain.Enums;
 using Netflix.Shared.Entities;
+namespace Netflix.Domain.Entities;
 
-namespace Netflix.Domain.Entites;
-public class Genre : Entity
+public class Category : Entity
 {
-    public Genre(string title, string slug)
+    public Category(ECategoryType type, string slug)
     {
-        Title = title;
+        Type = type;
         Slug = slug;
     }
-    public string Title { get; private set; }
+
+    public ECategoryType Type { get; private set; }
     public string Slug { get; private set; }
+
 }

@@ -1,5 +1,6 @@
+using Flunt.Notifications;
 namespace Netflix.Shared.Entities;
-public abstract class Entity
+public abstract class Entity : Notifiable<Notification>
 {
     public Entity()
     {

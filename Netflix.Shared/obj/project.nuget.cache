@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "D4Qm/B6qHhUzw18i76/FXIJlOTO2R1FxbOw9kYk79d/EyNvDcYtFEoIqMjCZ24nRPagObJ8Nq9IrZUIizVZzHQ==",
+  "dgSpecHash": "cBIXn5W0ZSLRn2+rorsqCWAajt5i5ABFtp92ZDb4Bwqr1lU3cqPPXtP9j5LX8zsatavNWPQKNx/SMbz6Eqr/QA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rafae\\Netflix\\Netflix.Shared\\Netflix.Shared.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "c:\\Users\\rafae\\Netflix\\Netflix.Shared\\Netflix.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rafae\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

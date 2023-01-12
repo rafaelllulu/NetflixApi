@@ -1,6 +1,6 @@
 namespace Netflix.Domain.Enums;
 
-public enum EVideoLanguage
+public enum ELanguageType
 {
     En = 1,
     Pt = 2,

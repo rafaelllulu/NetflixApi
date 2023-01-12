@@ -1,11 +1,56 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Flunt/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      },
+      "Netflix.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Flunt": "2.0.5"
+        },
+        "compile": {
+          "bin/placeholder/Netflix.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Netflix.Shared.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Flunt/2.0.5": {
+      "sha512": "CMgq8FUYjkHzyZT3PhkUwZyy79mudON+EL4b0SAT7BfIOJ2CNypwnbdA0cPHAM2CYQfO2L8ubNJCiBHQOIv2pA==",
+      "type": "package",
+      "path": "flunt/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.2.0.5.nupkg.sha512",
+        "flunt.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Flunt.dll"
+      ]
+    },
+    "Netflix.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Netflix.Shared/Netflix.Shared.csproj",
+      "msbuildProject": "../Netflix.Shared/Netflix.Shared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Flunt >= 2.0.5",
+      "Netflix.Shared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\rafae\\.nuget\\packages\\": {}
@@ -13,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rafae\\Netflix\\Netflix.Domain\\Netflix.Domain.csproj",
+      "projectUniqueName": "c:\\Users\\rafae\\Netflix\\Netflix.Domain\\Netflix.Domain.csproj",
       "projectName": "Netflix.Domain",
-      "projectPath": "C:\\Users\\rafae\\Netflix\\Netflix.Domain\\Netflix.Domain.csproj",
+      "projectPath": "c:\\Users\\rafae\\Netflix\\Netflix.Domain\\Netflix.Domain.csproj",
       "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rafae\\Netflix\\Netflix.Domain\\obj\\",
+      "outputPath": "c:\\Users\\rafae\\Netflix\\Netflix.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -32,7 +77,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\rafae\\Netflix\\Netflix.Shared\\Netflix.Shared.csproj": {
+              "projectPath": "c:\\Users\\rafae\\Netflix\\Netflix.Shared\\Netflix.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -44,6 +93,12 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
+        "dependencies": {
+          "Flunt": {
+            "target": "Package",
+            "version": "[2.0.5, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
